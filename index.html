@@ -54,15 +54,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="container site-header">
-      <div class="header-flex">
+    <header class="container header-section">
+      <div class="site-header">
         <nav class="header-navigation">
           <ul class="header-nav-list">
             <li class="header-nav-item">
@@ -76,26 +74,92 @@
             </li>
           </ul>
         </nav>
-        <a href="./index.html" class="logo-header"
-          ><img
-            src="/img/icons/CastlungerHomes_Logo_Schwarz.svg"
-            alt="Логотип"
-            width="200"
-            height="100"
-          />
+        <a href="./index.html" class="logo-header">
+          <svg class="logo-icon">
+            <use xlink:href="/img/icons/sprite.svg#icon-logo"></use>
+          </svg>
         </a>
-        <div>
-          <p>Would you like a free consultation right now?</p>
+        <div class="call">
+          <p class="call-text">Would you like a consultation right now?</p>
 
-          <a href="tel:+393517805665" class="link phone">+39 (351) 780-56-65</a>
+          <a href="tel:+393517805665" class="link-phone">+39 (351) 780-56-65</a>
         </div>
       </div>
     </header>
     <main>
-      <section id="services" class="first-section">services</section>
+      <section id="services" class="container first-section">
+        <div class="hero">
+          <div class="services-form">
+            <h6 class="form-title">GET A QUOTE INSTANTLY</h6>
+            <p class="form-description">
+              Aliquip ex ea commodo consequat placeat facere possimus, omnis
+              voluptas assumenda est.
+            </p>
+            <form id="applicationForm" action="#" method="post">
+              <div class="input-field">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                  class="input"
+                />
+              </div>
+              <div class="input-field">
+                <label for="email"></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                  class="input"
+                />
+              </div>
+              <div class="input-field">
+                <label for="phone"></label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone"
+                  required
+                  class="input"
+                />
+              </div>
+              <div class="input-field">
+                <label for="city"></label>
+                <select id="city" name="city" required class="input-city">
+                  <option value="">Chose place</option>
+                  <option value="New York">Badia</option>
+                  <option value="London">La Villa</option>
+                  <option value="Paris">Corvara</option>
+                  <option value="Paris">San Cassiano</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label for="rooms"></label>
+                <input
+                  type="number"
+                  id="rooms"
+                  name="rooms"
+                  min="1"
+                  required
+                  placeholder="Square m2"
+                  class="input"
+                />
+              </div>
+              <button type="submit" class="btn-form">Booking Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
       <section id="about">about</section>
       <section id="features">features</section>
     </main>
     <footer></footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
