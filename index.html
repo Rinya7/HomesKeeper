@@ -2,10 +2,100 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Опис вашого веб-сайту, який буде відображений у результатах пошуку Google."
+    />
+    <meta name="keywords" content="Alta Badia" />
+    <meta name="author" content="Homes Manager" />
+    <meta name="robots" content="index, follow" />
+    <!-- Дозволяє індексацію всіма пошуковими системами та слідування посиланням -->
+
+    <title>Homes Manager</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicons/cropped-CAHO-Logo-bg-beige-32x32.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicons/cropped-CAHO-Logo-bg-beige-180x180.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/img/favicons/cropped-CAHO-Logo-bg-beige-192x192.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="270x270"
+      href="/img/favicons/cropped-CAHO-Logo-bg-beige-270x270.png"
+    />
+
+    <!-- Опціонально, для інших розмірів -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/img/favicons/cropped-CAHO-Logo-bg-beige-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    Hello world
+    <header class="container site-header">
+      <div class="header-flex">
+        <nav class="header-navigation">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="./index.html" class="header-nav-link">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#services" class="header-nav-link">Services</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#about" class="header-nav-link">about</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="./index.html" class="logo-header"
+          ><img
+            src="/img/icons/CastlungerHomes_Logo_Schwarz.svg"
+            alt="Логотип"
+            width="200"
+            height="100"
+          />
+        </a>
+        <div>
+          <p>Would you like a free consultation right now?</p>
+
+          <a href="tel:+393517805665" class="link phone">+39 (351) 780-56-65</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="services" class="first-section">services</section>
+      <section id="about">about</section>
+      <section id="features">features</section>
+    </main>
+    <footer></footer>
   </body>
 </html>
